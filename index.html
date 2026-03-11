@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmark Manager</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  
+
+  <div class="dashboard">
+    <aside class="sidebar" style="height: 100vh; overflow-y: scroll;">
+      <div class="logo">
+        <div class="logo-icon">☰</div><div>Bookmark Manager</div>
+      </div>
+
+      <nav class="nav">
+        <a class="nav-item active">Home</a>
+        <a class="nav-item">Archived</a>
+      </nav>
+
+
+      <div class="tags">
+        <h4>TAGS</h4>
+        <ul>
+          <li><input type="checkbox"><span>AI</span><span class="count">1</span></li>
+          <li><input type="checkbox"><span>Community</span><span class="count">5</span></li>
+          <li><input type="checkbox"><span>Compatibility</span><span class="count">1</span></li>
+          <li><input type="checkbox"><span>CSS</span><span class="count">6</span></li>
+          <li><input type="checkbox"><span>Design</span><span class="count">1</span></li>
+          <li><input type="checkbox"><span>Framework</span><span class="count">2</span></li>
+          <li><input type="checkbox"><span>Git</span><span class="count">1</span></li>
+          <li><input type="checkbox"><span>HTML</span><span class="count">2</span></li>
+          <li><input type="checkbox"><span>JavaScript</span><span class="count">3</span></li>
+          <li><input type="checkbox"><span>Layout</span><span class="count">3</span></li>
+          <li><input type="checkbox"><span>Learning</span><span class="count">6</span></li>
+          <li><input type="checkbox"><span>Performance</span><span class="count">2</span></li>
+          <li><input type="checkbox"><span>Practice</span><span class="count">5</span></li>
+          <li><input type="checkbox"><span>Reference</span><span class="count">4</span></li>
+          <li><input type="checkbox"><span>Tips</span><span class="count">4</span></li>
+          <li><input type="checkbox"><span>Tools</span><span class="count">4</span></li>
+          <li><input type="checkbox"><span>Tutorial</span><span class="count">3</span></li>
+        </ul>
+      </div>
+    </aside>
+
+   
+    <main class="main">
+
+      <header class="topbar">
+        <input type="text" placeholder="Search by title..." />
+        <div class="top-actions">
+          <button class="add-btn">+ Add Bookmark</button>
+          <div class="avatar"></div>
+        </div>
+      </header>
+
+
+      <div style="padding: 30px 40px; height: 90vh; overflow-y: scroll;">
+        <div class="page-header">
+        <h1>All bookmarks</h1>
+        <button class="sort-btn">⇅ Sort by</button>
+      </div>
+
+      
+      <section class="cards">
+
+        <div class="card-grid">
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <div class="site-logo">\|-</div>
+            <div>
+              <h3>Frontend Mentor</h3><span>frontendmentor.io</span>
+            </div>
+          </div>
+          <button class="more-btn">⋮</button>
+        </div>
+
+        <p class="description">
+          Improve your front-end coding skills by building real projects.
+          Solve real-world HTML, CSS and JavaScript challenges whilst working to professional designs.
+        </p>
+
+        <div class="tags">
+          <span>Practice</span>
+          <span>Learning</span>
+          <span>Community</span>
+        </div>
+
+        <div class="card-footer">
+          <div class="meta">
+            👁️ 47
+            🕒 23 Sep
+            🗓️ 15 Jan
+          </div>
+          <button class="pin">📌</button>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <div class="site-logo dark">M</div>
+            <div>
+              <h3>MDN Web Docs</h3>
+              <span>developer.mozilla.org</span>
+            </div>
+          </div>
+          <button class="more-btn">⋮</button>
+        </div>
+
+        <p class="description">
+          The MDN Web Docs site provides information about Open Web technologies including HTML, CSS,
+          and APIs for both Web sites and progressive web apps.
+        </p>
+
+        <div class="tags">
+          <span>Reference</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+
+        <div class="card-footer">
+          <div class="meta">
+            👁️ 47
+            🕒 23 Sep
+            🗓️ 15 Jann
+          </div>
+          <button class="pin">📌</button>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <div class="site-logo dark">⚛️</div>
+            <div>
+              <h3>React Docs</h3>
+              <span>react.dev</span>
+            </div>
+          </div>
+          <button class="more-btn">⋮</button>
+        </div>
+
+        <p class="description">
+          The library for web and native user interfaces. Build user interfaces out of individual pieces called components.
+        </p>
+
+        <div class="tags">
+          <span>JavaScript</span>
+          <span>Framework</span>
+          <span>Reference</span>
+        </div>
+
+        <div class="card-footer">
+          <div class="meta">
+            👁️ 47
+            🕒 23 Sep
+            🗓️ 15 Jan
+          </div>
+          <button class="pin">📌</button>
+        </div>
+      </div>
+
+     
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <div class="site-logo dark">C</div>
+            <div>
+              <h3>Claude</h3>
+              <span>claude.ai</span>
+            </div>
+          </div>
+          <button class="more-btn">⋮</button>
+        </div>
+
+        <p class="description">
+          An AI assistant created by Anthropic that can help with analysis, writing, coding, math, and creative tasks through natural conversation. 
+        </p>
+
+        <div class="tags">
+          <span>Tools</span>
+          <span>Ai</span>
+          <span>Learning</span>
+        </div>
+
+        <div class="card-footer">
+          <div class="meta">
+            👁️ 47
+            🕒 23 Sep
+            🗓️ 15 Jan
+          </div>
+          <button class="pin">📌</button>
+        </div>
+      </div>
+
+
+       
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <div class="site-logo dark">WD</div>
+            <div>
+              <h3>Web.Dev</h3>
+              <span>web.dev</span>
+            </div>
+          </div>
+          <button class="more-btn">⋮</button>
+        </div>
+
+        <p class="description">
+          Guidance to build modern web experinces that work on any browser. learn about web vitals, PWAs, and more.
+        </p>
+
+        <div class="tags">
+          <span>Performance</span>
+          <span>Learning</span>
+          <span>Tips</span>
+        </div>
+
+        <div class="card-footer">
+          <div class="meta">
+            👁️ 47
+            🕒 23 Sep
+            🗓️ 15 Jan
+          </div>
+          <button class="pin">📌</button>
+        </div>
+      </div>
+
+
+
+       
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">
+            <div class="site-logo dark">T</div>
+            <div>
+              <h3>Tailwind CSS</h3>
+              <span>tailwindcss.com</span>
+            </div>
+          </div>
+          <button class="more-btn">⋮</button>
+        </div>
+
+        <p class="description">
+          A utility-firstCSS framework for rapidly building modern websites without ever leabing your HTML.
+        </p>
+
+        <div class="tags">
+          <span>CSS</span>
+          <span>Framework</span>
+          <span>Tools</span>
+        </div>
+
+        <div class="card-footer">
+          <div class="meta">
+            👁️ 47
+            🕒 23 Sep
+            🗓️ 15 Jan
+          </div>
+          <button class="pin">📌</button>
+        </div>
+      </div>
+
+      </section> </div>
+    </main>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
